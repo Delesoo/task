@@ -54,7 +54,7 @@ function sumOfNumbers(firstNum, secondNum, thirdNum){
 let summary = sumOfNumbers.apply(null, [65, 130, 420]);
 console.log(summary);
 
-//Task 3
+// //Task 3
 
 const Vehicle = {
   name: "Vehicle",
@@ -86,3 +86,11 @@ let stopcar = Vehicle.stop.bind(car);
 //Task 4
 
 //გამოიყენეთ Math და apply მაქსიმალური მნიშვნელობის დასათვლელად მასივიდან
+
+function maxValue (one, two, three, four){
+  return Math.max(one, two, three, four);
+}
+
+let calcmaxValue = maxValue.apply(null,[4,31,10,20]);
+
+console.log(calcmaxValue);
